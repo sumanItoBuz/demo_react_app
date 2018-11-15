@@ -1,0 +1,255 @@
+{
+    "stations":[
+        {
+            "id":1,
+            "name": "Station 1",
+            "status": "active",
+            "address": "road 1, city 1, state 1, pin: 700001",
+            "sync_status": "sync",
+            "parameters": ["prm1", "prm3"],
+            "data_set":[
+                {
+                    "time": 1542258653,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542257753,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542256853,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542255953,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542255053,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542254153,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Station 2",
+            "status": "inactive",
+            "address": "road 2, city 2, state 2, pin: 700002",
+            "sync_status": "pending",
+            "parameters": ["prm2", "prm4", "prm5"],
+            "data_set":[
+                {
+                    "time": 1542258653,
+                    "data":{
+                        "prm2": 0,
+                        "prm4": 0,
+                        "prm5": 0
+                    }
+                },{
+                    "time": 1542257753,
+                    "data":{
+                        "prm2": 8,
+                        "prm4": 11,
+                        "prm5": 15
+                    }
+                },{
+                    "time": 1542256853,
+                    "data":{
+                        "prm2": 10,
+                        "prm4": 11,
+                        "prm5": 20
+                    }
+                },{
+                    "time": 1542255953,
+                    "data":{
+                        "prm2": 8,
+                        "prm4": 15,
+                        "prm5": 13
+                    }
+                },{
+                    "time": 1542255053,
+                    "data":{
+                        "prm2": 7,
+                        "prm4": 17,
+                        "prm5": 14
+                    }
+                },{
+                    "time": 1542254153,
+                    "data":{
+                        "prm2": 6,
+                        "prm4": 20,
+                        "prm5": 20
+                    }
+                }
+            ]
+        },{
+            "id": 3,
+            "name": "Station 3",
+            "status": "active",
+            "address": "road 3, city 3, state 3, pin: 700003",
+            "sync_status": "unsync",
+            "parameters": ["prm1", "prm3"],
+            "data_set":[
+                {
+                    "time": 1542258653,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542257753,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542256853,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542255953,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542255053,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542254153,
+                    "data":{
+                        "prm1": 4,
+                        "prm3": 10
+                    }
+                }
+            ]
+        },{
+            "id": 4,
+            "name": "Station 4",
+            "status": "active",
+            "address": "road 4, city 4, state 4, pin: 700004",
+            "sync_status": "sync",
+            "parameters": ["prm1", "prm3", "prm5"],
+            "data_set":[
+                {
+                    "time": 1542258653,
+                    "data":{
+                        "prm1": 4,
+                        "prm5": 6,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542257753,
+                    "data":{
+                        "prm1": 5,
+                        "prm5": 7,
+                        "prm3": 14
+                    }
+                },{
+                    "time": 1542256853,
+                    "data":{
+                        "prm1": 8,
+                        "prm5": 5,
+                        "prm3": 15
+                    }
+                },{
+                    "time": 1542255953,
+                    "data":{
+                        "prm1": 7,
+                        "prm5": 7,
+                        "prm3": 10
+                    }
+                },{
+                    "time": 1542255053,
+                    "data":{
+                        "prm1": 6,
+                        "prm5": 5,
+                        "prm3": 14
+                    }
+                },{
+                    "time": 1542254153,
+                    "data":{
+                        "prm1": 8,
+                        "prm5": 6,
+                        "prm3": 10
+                    }
+                }
+            ]
+        }
+    ],
+    "parameters": [
+        {
+            "id": 1,
+            "key": "prm1",
+            "name": "Parameter 1",
+            "symbol": "prm<sub>2</sub>",
+            "unit": "PM1",
+            "thresholds": {
+                "upper_limit": 10,
+                "lower_limit": 3
+            }
+        },{
+            "id": 2,
+            "key": "prm2",
+            "name": "Parameter 2",
+            "symbol": "prm<sub>2</sub>",
+            "unit": "PM1",
+            "thresholds": {
+                "upper_limit": 20,
+                "lower_limit": 0
+            }
+        },{
+            "id": 3,
+            "key": "prm3",
+            "name": "Parameters 3",
+            "symbol": "prm<sub>3</sub>",
+            "unit": "PM3",
+            "thresholds": {
+                "upper_limit": 30,
+                "lower_limit": 10
+            }
+        },{
+            "id": 4,
+            "key": "prm4",
+            "name": "Parameter 4",
+            "symbol": "prm<sub>4</sub>",
+            "unit": "PM4",
+            "thresholds": {
+                "upper_limit": 14,
+                "lower_limit": 4
+            }
+        },{
+            "id": 5,
+            "key": "prm5",
+            "name": "Parameter 5",
+            "symbol": "prm<sub>5</sub>",            
+            "unit": "PM5",
+            "thresholds": {
+                "upper_limit": 10,
+                "lower_limit": 5
+            }
+        }
+    ]
+}

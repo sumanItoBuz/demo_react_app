@@ -1,0 +1,69 @@
+@import './components/NavBar/NavBar.css';
+@import './components/StationList/StationList.css';
+@import './components/ParameterList/ParameterList.css';
+@import './components/Station/Station.css';
+
+:root{
+    --dark: #555;
+    --light-dark: #aaa;
+    --light: #eee;
+    --light-translucent: rgba(238,238,238,0.89);
+    --very-light: #fff;
+    --online: #4cae4c;
+    --offline: #d43f3a;
+}
+
+html, body , #app, #body, .fullheight{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#body{
+    padding-top: 50px;
+}
+
+/* Table Style */
+table{
+    margin: 0px 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-collapse:collapse;
+}
+
+/* Table Head */
+thead tr{
+    text-align: center;
+}
+thead tr th{
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    background-color: var(--light-dark);
+}
+
+
+/* Table Body */
+tbody tr{
+    text-align: center;
+}
+tbody tr td{
+    padding: 10px;
+    font-size: 17px;
+}
+tbody tr td{
+    padding: 10px;
+    font-size: 17px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--very-light);
+}
+tbody tr:nth-child(even){
+    background-color: var(--light);
+}
+tbody tr:hover{
+    background-color: var(--light-dark);
+}

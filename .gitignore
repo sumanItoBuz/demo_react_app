@@ -1,0 +1,3 @@
+bundle/
+.netlify/
+node_modules/
