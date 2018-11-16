@@ -13,6 +13,7 @@ class StationList extends Component{
             stations_list: [],
             parameters_list: [],
             selected_station: null,
+            add_station: false,
             isError: false
         }
         
@@ -22,13 +23,15 @@ class StationList extends Component{
         this.getParametersList = this.getParametersList.bind(this);
         this.getParameters = this.getParameters.bind(this);
         this.getStationDetails = this.getStationDetails.bind(this);
+        this.closeDialogue = this.closeDialogue.bind(this);
+        this.dataUpdated = this.dataUpdated.bind(this);
+        this.addStation = this.addStation.bind(this);
     }
 
     getStationDetails(station_id){
-        console.log('Station Id', station_id);
-        // this.setState({
-        //     selected_station: station_id
-        // })
+        this.setState({
+            selected_station: station_id
+        })
     }
 
     updateStationsList(station_list){
@@ -107,6 +110,27 @@ class StationList extends Component{
         }
     }
 
+    closeDialogue(){
+        if(this.state.selected_station || this.state.add_station){
+            this.setState({
+                selected_station: null,
+                add_station: false
+            })
+        }
+    }
+
+    dataUpdated(){
+        this.getStationList();
+        this.closeDialogue();
+    }
+
+    addStation(){
+        this.setState({
+            selected_station: null,
+            add_station: true
+        })
+    }
+
     componentDidMount(){
         this.isMount = true;
         this.getParametersList();
@@ -125,14 +149,15 @@ class StationList extends Component{
                     }else{
                         return <div id="station_list">
                             {(()=>{
-                                if(this.state.selected_station){
+                                if(this.state.selected_station || this.state.add_station){
                                     return <div id="station_details"> 
-                                        <Station station_id={this.state.selected_station} onExit={()=>{this.closeDialogue()}} onUpdate={()=>{this.dataUpdated()}} onDelete={()=>{this.dataUpdated()}} ></Station>
+                                        <Station station_id={this.state.selected_station} onExit={()=>{this.closeDialogue()}} onUpdate={()=>{this.dataUpdated()}} onDelete={()=>{this.dataUpdated()}} onNewAdd={()=>{this.dataUpdated()}} ></Station>
                                     </div>;
                                 }
                             })()}
                             <div className="heading">
                                 List of All the Stations
+                                <button onClick={()=>{this.addStation()}} className="add-station-button" > + </button>
                             </div>
                             <table>
                                 <thead>

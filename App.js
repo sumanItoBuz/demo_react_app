@@ -9,6 +9,8 @@ import Station from './components/Station/Station.js';
 import ParameterList from './components/ParameterList/ParameterList.js';
 import Parameter from './components/Parameter/Parameter.js';
 
+import styles from './style.css';
+
 class App extends Component{
    render(){
       return(

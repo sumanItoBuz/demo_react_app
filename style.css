@@ -11,6 +11,8 @@
     --very-light: #fff;
     --online: #4cae4c;
     --offline: #d43f3a;
+    --info: #3f5698;
+    --danger: #a93e3e;
 }
 
 html, body , #app, #body, .fullheight{
@@ -66,4 +68,8 @@ tbody tr:nth-child(even){
 }
 tbody tr:hover{
     background-color: var(--light-dark);
+}
+
+.invisivle{
+    display: none;
 }
